@@ -1,6 +1,6 @@
 # ENM Dijital Quiz App
 
-Flutter ile geliştirilen çok platformlu (iOS, Android, Web, Windows, MacOS, Linux) dijital quiz uygulaması. Kullanıcılar farklı konularda testler çözebilir, skorlarını görebilir ve eğitim süreçlerini dijitalleştirebilir.
+Flutter ile geliştirilen dijital quiz uygulaması. Kullanıcılar farklı konularda testler çözebilir, skorlarını görebilir ve eğitim süreçlerini dijitalleştirebilir.
 
 ## 📱 Özellikler
 
