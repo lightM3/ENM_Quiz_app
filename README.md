@@ -11,8 +11,12 @@ Flutter ile geliştirilen dijital quiz uygulaması. Kullanıcılar farklı konul
 - 
 ![QuizScreen](https://github.com/user-attachments/assets/d4ddac6d-242c-4e24-9cf3-88707e5a91f9)
 - Puan hesaplama ve sonuç ekranı-
+-
+![ScoreScreen](https://github.com/user-attachments/assets/84f6ba40-1277-4a10-9898-ef2677a26460)
+- Geçmiş skorları görüntüleme
 - 
-![ScoreScreen](https://github.com/user-attachments/assets/805eed53-0460-4add-b924-c4aceee0176d)
+![ScoreHistoryScreen](https://github.com/user-attachments/assets/a089ffe8-47f1-40b5-86b7-26ce5f5c7c2f)
+
 - JSON formatında soru setleri
 
 - Hızlı ve akıcı performans
