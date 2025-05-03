@@ -71,7 +71,17 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     elevation: 5,
                   ),
+
                   onPressed: () {
+                    final kAdi = _usernameController.text.trim();
+                    if (kAdi.isEmpty) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text('Lütfen bir kullanıcı adı girin'),
+                        ),
+                      );
+                      return;
+                    }
                     _saveUsername();
                     Navigator.push(
                       context,

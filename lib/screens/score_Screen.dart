@@ -1,17 +1,46 @@
+import 'package:enm_quiz_app/screens/score_history_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-class ScoreScreen extends StatelessWidget {
+class ScoreScreen extends StatefulWidget {
   final int score;
   final int total;
-  final String? kAdi;
 
   ScoreScreen({
     super.key,
     required this.score,
     required this.total,
-    required this.kAdi,
+    required String kAdi,
   });
+
+  @override
+  State<ScoreScreen> createState() => _ScoreScreenState();
+}
+
+class _ScoreScreenState extends State<ScoreScreen> {
+  String? kAdi;
+
+  @override
+  void initState() {
+    super.initState();
+    loadUsernameAndSaveScore();
+  }
+
+  Future<void> loadUsernameAndSaveScore() async {
+    final prefs = await SharedPreferences.getInstance();
+    final storedName = prefs.getString('Kullanıcı Adı') ?? 'Bilinmiyor';
+    setState(() {
+      kAdi = storedName;
+    });
+
+    final List<String> scores = prefs.getStringList('scoreList') ?? [];
+    final String now = DateTime.now().toString();
+    final String scoreEntry =
+        'Kullanıcı: $storedName | Skor: ${widget.score} | $now';
+    scores.add(scoreEntry);
+    await prefs.setStringList('scoreList', scores);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +54,19 @@ class ScoreScreen extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
         ),
         automaticallyImplyLeading: false,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.history),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ScoreHistoryPage(),
+                ),
+              );
+            },
+          ),
+        ],
       ),
       body: Center(
         child: Padding(
@@ -33,7 +75,7 @@ class ScoreScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Tebrikler! $kAdi",
+                "Tebrikler! ${kAdi ?? ''}",
                 textAlign: TextAlign.center,
                 style: GoogleFonts.ebGaramond(
                   textStyle: const TextStyle(
@@ -75,7 +117,7 @@ class ScoreScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     Text(
-                      "$score / $total",
+                      "${widget.score} / ${widget.total}",
                       style: GoogleFonts.ebGaramond(
                         textStyle: const TextStyle(
                           fontSize: 42,
