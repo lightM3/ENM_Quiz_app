@@ -1,0 +1,158 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Türkiye'nin başkenti neresidir?"
+        },
+        {
+            "id": 2,
+            "question": "Bir yıl kaç gündür?"
+        },
+        {
+            "id": 3,
+            "question": "En büyük gezegen hangisidir?"
+        },
+        {
+            "id": 4,
+            "question": "Türkiye'ni para birimi nedir?"
+        },
+        {
+            "id": 5,
+            "question": "Kırmızı ile mavi karışırsa hangi renk elde edilir?"
+        },
+        {
+            "id": 6,
+            "question": "İnsan vücüdunda kaç böbrek vardır?"
+        },
+        {
+            "id": 7,
+            "question": "Güneş hangi yönden yükselir?"
+        },
+        {
+            "id": 8,
+            "question": "Elma hangi renkte olamaz?"
+        },
+        {
+            "id": 9,
+            "question": "Atatürk hangi yılda doğmuştur?"
+        },
+        {
+            "id": 10,
+            "question": "Türkiye'nin en uzun nehri hangisidir?"
+        }
+    ],
+    "choices": [
+        {
+            "id": 1,
+            "choice1": "İstanbul",
+            "choice2": "Ankara",
+            "choice3": "İzmir",
+            "choice4": "Eskişehir"
+        },
+        {
+            "id": 2,
+            "choice1": "362",
+            "choice2": "363",
+            "choice3": "364",
+            "choice4": "365"
+        },
+        {
+            "id": 3,
+            "choice1": "Mars",
+            "choice2": "Venüs",
+            "choice3": "Jüpiter",
+            "choice4": "Dünya"
+        },
+        {
+            "id": 4,
+            "choice1": "Dolar",
+            "choice2": "Euro",
+            "choice3": "Lira",
+            "choice4": "Yen"
+        },
+        {
+            "id": 5,
+            "choice1": "Mor",
+            "choice2": "Yeşil",
+            "choice3": "Pembe",
+            "choice4": "Sarı"
+        },
+        {
+            "id": 6,
+            "choice1": "1",
+            "choice2": "2",
+            "choice3": "3",
+            "choice4": "4"
+        },
+        {
+            "id": 7,
+            "choice1": "Kuzey",
+            "choice2": "Güney",
+            "choice3": "Doğu",
+            "choice4": "Batı"
+        },
+        {
+            "id": 8,
+            "choice1": "Kırmızı",
+            "choice2": "Yeşil",
+            "choice3": "Sarı",
+            "choice4": "Mavi"
+        },
+        {
+            "id": 9,
+            "choice1": "1881",
+            "choice2": "1923",
+            "choice3": "1919",
+            "choice4": "1938"
+        },
+        {
+            "id": 10,
+            "choice1": "Sakarya",
+            "choice2": "Kızılırmak",
+            "choice3": "Fırat",
+            "choice4": "Dicle"
+        }
+    ],
+    "answers": [
+        {
+            "id": 1,
+            "answer": "Ankara"
+        },
+        {
+            "id": 2,
+            "answer": "365"
+        },
+        {
+            "id": 3,
+            "answer": "Jüpiter"
+        },
+        {
+            "id": 4,
+            "answer": "Lira"
+        },
+        {
+            "id": 5,
+            "answer": "Mor"
+        },
+        {
+            "id": 6,
+            "answer": "2"
+        },
+        {
+            "id": 7,
+            "answer": "Doğu"
+        },
+        {
+            "id": 8,
+            "answer": "Mavi"
+        },
+        {
+            "id": 9,
+            "answer": "1881"
+        },
+        {
+            "id": 10,
+            "answer": "Kızılırmak"
+        }
+    ]
+}
